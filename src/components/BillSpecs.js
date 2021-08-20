@@ -1,6 +1,6 @@
 import React from "react";
 
-const BillSpecs = ({bill}) => {
+const BillSpecs = ({bill, handleClick}) => {
   return (
     <div className="ui segment">
       <div className="ui two column centered grid">
@@ -52,9 +52,7 @@ const BillSpecs = ({bill}) => {
             <button
               className="ui button fluid"
               onClick={() =>
-                console.log(
-                  "connect this to a function that adds this bill to your bill cast list"
-                )
+              hireBill(bill.id)
               }
             >
               Enlist
